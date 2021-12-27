@@ -18,7 +18,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <header class="header">
     <div class="container">
       <nav class="navigation">
         <ul class="navigation__list">
@@ -26,19 +26,19 @@
             <a class="navigation__link" href="#contacts">Contacts</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#about-me">About me</a>
+            <a class="navigation__link" href="#skills">Skills</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#skills">Skills</a>
+            <a class="navigation__link" href="#about-me">About me</a>
           </li>
           <li class="navigation__item">
             <a class="navigation__link" href="#code-example">Code example</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#completed-projects">Completed projects</a>
+            <a class="navigation__link" href="#educations">Education</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#educations">Education</a>
+            <a class="navigation__link" href="#completed-projects">Completed projects</a>
           </li>
           <li class="navigation__item">
             <a class="navigation__link" href="#courses">Courses</a>
@@ -50,45 +50,37 @@
       </nav>
     </div>
   </header>
-  <main>
-    <div class="container">
-      <section class="profile">
-     
-          <img class="profile__img" src="/assets/img/my-photo.png" width="150"  alt="Mikhail Nosov photo">
+  <main class="main">
+    <div class="container  main-container">
+      <section class="section profile">
+          <img class="profile__img" src="/assets/img/my-photo.png" width="200"  alt="Mikhail Nosov photo">
           <div class="profile__wrapper">
             <h1 class="profile__title">Mikhail Nosov</h1>
-            <h3 class="profile__subtitle">Front-end web developer (Beginner)</h3>
+            <h3 class="profile__subtitle">Frontend Developer (Beginner)</h3>
           </div>
-          
       </section>
-      <section class="contacts" id="contacts">
-        <h2 class="contacts__title">Contacts</h2>
+      <section class="section contacts" id="contacts">
+        <h2 class="section-title contacts__title">Contacts</h2>
         <ul class="contacts__list">
           <li class="contacts__item">Saratov, Russian Federation
           </li>
           <li class="contacts__item">Email:
-            <a class="contacts__link" href="mailto:manosov1984@gmail.com">manosov1984@gmail.com</a>
+            <a class="contacts__link" target="_blank" href="mailto:manosov1984@gmail.com">manosov1984@gmail.com</a>
           </li>
           <li class="contacts__item">Github:
-            <a class="contacts__link" href="https://github.com/nos64">nos64</a>
+            <a class="contacts__link" target="_blank" href="https://github.com/nos64">nos64</a>
           </li>
           <li class="contacts__item">Telegram:
-            <a class="contacts__link" href="https://t.me/ziglobe">@ziglobe</a>
+            <a class="contacts__link" target="_blank" href="https://t.me/ziglobe">@ziglobe</a>
           </li>
           <li class="contacts__item">Discord:
-            <a class="contacts__link" href="https://discord.gg/fgrATdKn">MIHAIL NOSOV (@nos64)</a>
+            <a class="contacts__link" target="_blank" href="https://discord.gg/fgrATdKn">MIHAIL NOSOV (@nos64)</a>
           </li>
         </ul>
       </section>
-      <section class="about-me" id="about-me">
-        <h2 class="about-me__title">About me</h2>
-        <p class="about-me__text">
-          My name is Michael. Currently I work as an engineer in the power industry. I decided to radically change my occupation - to study as a web developer and develop in this area. For 3 months now I have been learning HTML, CSS and JavaScript on my own.
-          I have good analytical skills. Easy to teach. I work well in a team.
-        </p>
-      </section>
-      <section class="skills" id="skills">
-        <h2 class="skills__title">Skills</h2>
+      
+      <section class="section skills" id="skills">
+        <h2 class="section-title skills__title">Skills</h2>
         <ul class="skills__list">
           <li class="skil__item">HTML5, CSS3;</li>
           <li class="skil__item">JavaScript(the basics);</li>
@@ -96,27 +88,33 @@
           <li class="skil__item">Adobe Photoshop, Figma;</li>
         </ul>
       </section>
-      <section class="code-example" id="code-example">
-        <h2 class="code-example__title">Code example</h2>
+      <section class="section about-me" id="about-me">
+        <h2 class="section-title about-me__title">About me</h2>
+        <p class="about-me__text">
+          My name is Michael. Currently I work as an engineer in the power industry. I decided to radically change my occupation - to study as a web developer and develop in this area. For 3 months now I have been learning HTML, CSS and JavaScript on my own.
+          I have good analytical skills. Easy to teach. I work well in a team.
+        </p>
+      </section>
+      <section class="section code-example" id="code-example">
+        <h2 class="section-title code-example__title">Code example</h2>
         <pre class="code-example__code">
-          calcBtn.addEventListener('click', ()=> {
-            event.preventDefault();
-            const billValue = +form.elements.billValue.value;
-            const peopleValue = +form.elements.peopleValue.value;
-            const persentTip = +form.elements.radio.value;
-            const warning = document.querySelector('.warning-mesage')
-           if (billValue && peopleValue) {
-            warning.style.display = 'none';
-            outTip.textContent = (billValue * persentTip).toFixed(2);
-            totalPerPerson.textContent = ((billValue + billValue * persentTip) / peopleValue).toFixed(2);
-           } else {
-            warning.style.display = 'flex';
-           }
-          });
+            function addZero() {
+              if (seconds.value.length < 2) {
+                seconds.value = `0${seconds.value}`
+              }
+              if (minutes.value < 10 && minutes.value.length < 2) {
+                minutes.value = `0${minutes.value}`
+              }
+            }
         </pre>
       </section>
-      <section class="completed-projects" id="completed-projects">
-        <h2 class="completed-projects__title">Completed-projects</h2>
+      <section class="section educations" id="educations">
+        <h2 class="section-title educations__title">Educations</h2>
+        <p class="education__place">2001 - 2006 Saratov State Agrarian University N.I. Vavilova</p>
+        <p class="education__speciality">Power supply of agricultural enterprises</p>
+      </section>
+      <section class="section completed-projects" id="completed-projects">
+        <h2 class="section-title completed-projects__title">Completed-projects</h2>
         <p class="completed-projects__description">My little pet projects:</p>
         <ul class="completed-projects__list">
           <li class="completed-projects__item">
@@ -133,13 +131,8 @@
           </li>
         </ul>
       </section>
-      <section class="educations" id="educations">
-        <h2 class="educations__title">Educations</h2>
-        <p class="education__place">2001 - 2006 Saratov State Agrarian University N.I. Vavilova</p>
-        <p class="education__speciality">Power supply of agricultural enterprises</p>
-      </section>
-      <section class="courses" id="courses">
-        <h2 class="courses__title">Courses</h2>
+      <section class="section courses" id="courses">
+        <h2 class="section-title courses__title">Courses</h2>
           <ul class="courses__list">
             <li class="courses__item">Stepik - "Web Development for Beginners: HTML and CSS"</li>
             <li class="courses__item">Stepik - "Introduction to computer architecture. Elements of operating systems"</li>
@@ -147,8 +140,8 @@
             <li class="courses__item">RS School - "JavaScript/Front-end. Stage 0"(in progress)</li>
           </ul>
       </section>
-      <section class="languages" id="languages">
-        <h2 class="languages__title">Languages</h2>
+      <section class="section languages" id="languages">
+        <h2 class="section-title languages__title">Languages</h2>
         <ul class="languages__list">
           <li class="languages__item">Russian (Native)</li>
           <li class="languages__item">English (A2 Pre-Intermidate)</li>
@@ -159,6 +152,7 @@
   <footer class="footer">
     <div class="container">
       <a class="footer__link-git" target="_blank" href="https://github.com/nos64"><img src="assets/img/github.svg" width="30" alt="Link Github Nosov Mikhail"></a>
+      <p class="fotter__year">2021</p>
       <a class="footer__link-course" target="_blank" href="https://rs.school/js/"><img src="assets/img/rs_school_js.svg" width="80" alt="Link RS School"></a>
     </div>
   </footer>
