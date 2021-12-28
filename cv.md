@@ -52,7 +52,6 @@ calcBtn.addEventListener('click', ()=> {
  } else {
   warning.style.display = 'flex';
  }
-
 });
 
 ```
