@@ -216,11 +216,6 @@ gap: 20px;
   font-size: 14px;
 }
 
-
-
-
-
-
 .completed-projects__link {
   position: relative;
   margin-left: 20px;
@@ -252,8 +247,142 @@ gap: 20px;
   transform: scaleX(1);
 }
 
+.education__place-year,
+.education__speciality-title,
+.courses__item-wrapper,
+.languages__item {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  line-height: 30px;
+}
+
+.footer {
+  background-color: #606fa6;
+}
+
+.footer-wrapper {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items:center;
+}
+
+.footer__link {
+  position: relative;
+  display: flex;
+  align-items:center;
+  color: #FFF;
+  transition: .4s;
+ }
+
+.footer__link:hover {
+  color: #d9d9d9;
+  stroke: #d9d9d9;;
+  fill: #d9d9d9;
+}
+
+.footer__link-github {
+  padding-right: 5px;
+}
+
+.footer__link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+  width: 70%;
+  height: 2px;
+  background-color: #d9d9d9;
+  transition-duration: .4s;
+  transition-property: transform;
+  transform: scaleX(0);
+}
+
+.footer__link:hover::before {
+  transform: scaleX(1);
+}
+
+.footer__link-rsschool {
+  transition: .4s;
+}
+
+.footer__link-rsschool:hover {
+  stroke: #383838;
+  fill: #383838;
+}
 
 
+.fotter__year {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  line-height: 30px;
+  color:#fff;
+}
+
+.hamburger {
+  display: none;
+  position: fixed;
+  top: 5px;
+  right: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #606fa6;
+  margin: 6px 0;
+  transition: 0.4s;
+  border-radius: 10px;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+  background-color: #FFF;
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+  background-color: #FFF;
+}
+
+@media (max-width: 980px) {
+  .hamburger {
+    display: block;
+    z-index: 1000;
+  }
+
+  .navigation__item {
+    display: none;
+}
+
+.navigation__list {
+    display: flex;
+    flex-direction: column; 
+    background-color:#606fa6;
+}
+
+.navigation__link {
+  padding-top: 10px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.navigation__item.active {
+    display: flex;
+    border-right: none;
+}
+}
 
 @media (max-width: 768px) {
   .section {
@@ -267,6 +396,3 @@ gap: 20px;
 }
 
 
-.footer {
-  background-color: #606fa6;
-}
