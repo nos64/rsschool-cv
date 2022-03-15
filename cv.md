@@ -84,7 +84,7 @@ Power supply of agricultural enterprises
 * **Stepik** "Web Development for Beginners: HTML and CSS";
 * **Stepik** "Introduction to computer architecture. Elements of operating systems";
 * **JetBrainsAcademy** "Frontend Developer";
-* **RS School** "JavaScript/Front-end. Stage 0"(in progress).
+* **RS School** "JavaScript/Front-end. Stage 0".
 
 ## **Languages**
 * English (A2 Pre-Intermidate);
