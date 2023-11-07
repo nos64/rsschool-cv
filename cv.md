@@ -21,6 +21,8 @@ I use HTML, CSS, JavaScript, practice React and a little TypeScript.
 
 ## Skills ##
 
+
+
 * HTML, CSS;
 * JavaScript;
 * React, TypeScript;
