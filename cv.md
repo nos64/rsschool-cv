@@ -1,6 +1,6 @@
 # Mikhail Nosov #
 
-[Mikhail Nosov photo](./Снимок%20экрана%20от%202023-11-07%2022-38-13.png)
+![Mikhail Nosov photo](./Снимок%20экрана%20от%202023-11-07%2022-38-13.png)
 
 
 ## Contacts ##
